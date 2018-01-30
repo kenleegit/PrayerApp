@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PrayerApp.ItemDetailPage" Title="{Binding Title}">
+    <ScrollView>
+    <StackLayout Spacing="20" Padding="15">
+        <!--<Label Text="{Binding Item.Text}" FontSize="Medium" />
+        <Label x:Name="textDescription" Text="{Binding Item.Description}"/>
+        -->
+        <Button x:Name="btnSaveEntry" Text="收藏" Clicked="Save_Clicked" />
+        <Label x:Name="labelScale" />
+        <Label x:Name="textdate" Text="{Binding Item.date}"/>
+        <Label x:Name="textTitlerendered" Text="{Binding Item.title.rendered}"/>
+        <Label x:Name="textContentrendered" Text="{Binding Item.content.rendered}" />
+        <!--Set Maximum first. See https://bugzilla.xamarin.com/show_bug.cgi?id=21181 -->
+        <Slider x:Name="sliderFontSize" Maximum="18" Minimum="10" ValueChanged="OnFontSizeSliderChanged"/>
+    </StackLayout>
+    </ScrollView>
+</ContentPage>
