@@ -3,10 +3,13 @@
 	<ContentPage.Content>
     <ScrollView>
     <StackLayout Spacing="20" Padding="15">
-    <Label x:Name="labelH1" Text="關於我們" />
+    <Button Margin="0,20,0,0" Text="返回" x:Name="BtnDismiss" Clicked="OnDismissButtonClicked" BackgroundColor="{StaticResource Primary}" TextColor="White" />
+    <Label x:Name="labelHead" Text="關於我們" />
                 <ContentView Padding="0,0,0,0" VerticalOptions="FillAndExpand">
                 <Image Source="prayer_request.jpg" VerticalOptions="Center" HeightRequest="200" />
                 </ContentView>
+    <Label x:Name="labelAddress" Text="香港九龍新蒲崗大有街1號勤達中心10樓" />
+                
     </StackLayout>
     </ScrollView>
 	</ContentPage.Content>

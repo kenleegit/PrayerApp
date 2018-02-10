@@ -11,5 +11,10 @@ namespace PrayerApp
         {
             InitializeComponent();
         }
+
+        async void OnDismissButtonClicked(object sender, EventArgs args)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
